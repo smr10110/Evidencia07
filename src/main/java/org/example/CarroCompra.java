@@ -1,5 +1,7 @@
 package org.example;
 
+import example.Calculadora;
+
 public class CarroCompra {
     private int[][] productos = new int[2][5];
 
@@ -21,7 +23,7 @@ public class CarroCompra {
     }
 
     private int subTotal(int cant, int precio) {
-        Calculadora calc = new Calculadora(cant, precio);
+        example.Calculadora calc = new Calculadora(cant, precio);
         return calc.multiplicar();
     }
 
